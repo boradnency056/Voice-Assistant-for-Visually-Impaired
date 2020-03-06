@@ -30,7 +30,7 @@ def wishMe():
     else:
         speak("Good Evening!")  
 
-    speak("I am Friday Sir. Please tell me how may I help you")       
+    speak("I am Jarvis Sir. Please tell me how may I help you")       
 
 def takeCommand():
     #It takes microphone input from the user and returns string output
@@ -83,7 +83,6 @@ if __name__ == "__main__":
         
         elif 'detect object' in query:
             speak('Detecting Objects sir')
-            finalWebcam.detectObject()
             #Create function of detecting the ojects
         
         elif 'search best transport' in query:
@@ -92,4 +91,5 @@ if __name__ == "__main__":
 
         elif 'predict objects' in query:
             speak('predicitng for possible obstacles')
+            finalWebcam.detectObject()
             #Create function of predicting objects according to the environment
